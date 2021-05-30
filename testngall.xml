@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.Utilities.ListenerClass"></listener>
+</listeners>
+  <test thread-count="5" name="Test_All">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <!-- <class name="com.TestCases.AddToCartPageTest"/>
+      <class name="com.TestCases.LoginPageTest"/>
+      <class name="com.TestCases.HomePageTest"/> -->
+      
+      <class name="com.TestCases.AccountCreationPageTest"/>
+     <!--  <class name="com.TestCases.IndexPageTest"/>
+      <class name="com.TestCases.SearchResultPageTest"/>
+      <class name="com.TestCases.OrderPageTest"/>
+      <class name="com.TestCases.EndToEndTest"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
